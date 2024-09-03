@@ -2,6 +2,8 @@
 
 This extension of Scaffold-ETH 2 is designed to support development on the Rootstock sidechain, a Bitcoin-powered smart contract platform. It provides the tools needed to build and deploy dApps on Rootstock. 
 
+![screenshot](https://github.com/Paul-Sizon/rootstock-extention/blob/main/screenshot.png?raw=true)
+
 ## Installation
 
 1. **Create a new project with the Rootstock extension:**
