@@ -13,7 +13,5 @@ describe("RuneToken", function () {
     await runeToken.waitForDeployment();
   });
 
-  describe("Deployment", function () {
-    
-  });
+  describe("Deployment", function () {});
 });

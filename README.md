@@ -1,8 +1,36 @@
 # 🏗 Rootstock Extension of Scaffold-ETH 2
 
-## Building on Rootstock
+This extension of Scaffold-ETH 2 is designed to support development on the Rootstock sidechain, a Bitcoin-powered smart contract platform. It provides the tools needed to build and deploy dApps on Rootstock. 
 
-Scaffold-ETH 2: Rootstock Extension supports development on the Rootstock sidechain, a Bitcoin-powered smart contract platform. This extension provides the tools necessary to build and deploy dApps on Rootstock. Learn more about Rootstock and how to get started:
+## Installation
+
+1. **Create a new project with the Rootstock extension:**
+
+   ```bash
+   npx create-eth@latest -e rootstock
+    ```
+2. **Get API keys**
+[Rootstock Dashboard](https://dashboard.rpc.rootstock.io/dashboard)
+
+3. **Add rsk network to hardhat.config.ts file:**
+    ```typescrypt
+    const rootstockApiKey = process.env.ROOTSTOCK_API_KEY 
+
+   rskMainnet: {
+      url: `https://rpc.mainnet.rootstock.io/${rootstockApiKey}`,
+      chainId: 30,
+      gasPrice: 60000000,
+      accounts: [deployerPrivateKey],
+    },
+    rskTestnet: {
+      url: `https://rpc.testnet.rootstock.io/${rootstockApiKey}`,
+      chainId: 31,
+      gasPrice: 60000000,
+      accounts: [deployerPrivateKey],
+    },
+    ```
+
+## Building on Rootstock
 
 - **Get API keys**: [Rootstock Dashboard](https://dashboard.rpc.rootstock.io/dashboard)
 - **Developer resources**: [Rootstock Developer Portal](https://dev.rootstock.io/)
@@ -75,15 +103,3 @@ Run smart contract tests with `yarn hardhat:test`.
 - Edit your smart contract `RuneToken.sol` in `packages/hardhat/contracts`.
 - Edit your frontend homepage at `packages/nextjs/app/page.tsx`. For guidance on [routing](https://nextjs.org/docs/app/building-your-application/routing/defining-routes) and configuring [pages/layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts), check out the Next.js documentation.
 - Edit your deployment scripts in `packages/hardhat/deploy`.
-
-## Documentation
-
-Visit our [docs](https://docs.scaffoldeth.io) to learn how to start building with Scaffold-ETH 2.
-
-To know more about its features, check out our [website](https://scaffoldeth.io).
-
-## Contributing to Scaffold-ETH 2: Rootstock Extension
-
-We welcome contributions to Scaffold-ETH 2: Rootstock Extension!
-
-Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing.
