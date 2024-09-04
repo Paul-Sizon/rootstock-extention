@@ -31,6 +31,7 @@ This extension of Scaffold-ETH 2 is designed to support development on the Roots
       accounts: [deployerPrivateKey],
     },
     ```
+4. **Set Solidity version to 0.8.24 in hardhat.config.ts (hopefully it will be part of this extension soon)** 
 
 ## Building on Rootstock
 
