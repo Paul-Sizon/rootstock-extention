@@ -11,27 +11,6 @@ This extension of Scaffold-ETH 2 is designed to support development on the Roots
    ```bash
    npx create-eth@latest -e rootstock
     ```
-2. **Get API keys**
-[Rootstock Dashboard](https://dashboard.rpc.rootstock.io/dashboard)
-
-3. **Add rsk network to hardhat.config.ts file:**
-    ```typescrypt
-    const rootstockApiKey = process.env.ROOTSTOCK_API_KEY 
-
-   rskMainnet: {
-      url: `https://rpc.mainnet.rootstock.io/${rootstockApiKey}`,
-      chainId: 30,
-      gasPrice: 60000000,
-      accounts: [deployerPrivateKey],
-    },
-    rskTestnet: {
-      url: `https://rpc.testnet.rootstock.io/${rootstockApiKey}`,
-      chainId: 31,
-      gasPrice: 60000000,
-      accounts: [deployerPrivateKey],
-    },
-    ```
-4. **Set Solidity version to 0.8.24 in hardhat.config.ts (hopefully it will be part of this extension soon)** 
 
 ## Building on Rootstock
 
@@ -106,3 +85,6 @@ Run smart contract tests with `yarn hardhat:test`.
 - Edit your smart contract `RuneToken.sol` in `packages/hardhat/contracts`.
 - Edit your frontend homepage at `packages/nextjs/app/page.tsx`. For guidance on [routing](https://nextjs.org/docs/app/building-your-application/routing/defining-routes) and configuring [pages/layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts), check out the Next.js documentation.
 - Edit your deployment scripts in `packages/hardhat/deploy`.
+
+**Get API keys to deploy to production**
+[Rootstock Dashboard](https://dashboard.rpc.rootstock.io/dashboard)
