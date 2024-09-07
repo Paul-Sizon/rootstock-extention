@@ -12,47 +12,19 @@ This extension of Scaffold-ETH 2 is designed to support development on the Roots
    npx create-eth@latest -e rootstock
     ```
 
-## Building on Rootstock
-
-- **Get API keys**: [Rootstock Dashboard](https://dashboard.rpc.rootstock.io/dashboard)
-- **Developer resources**: [Rootstock Developer Portal](https://dev.rootstock.io/)
-- **Learn about Runes**: [What are Runes?](https://www.youtube.com/embed/adkhsgEaXuQ?si=OknSz_y17LzBCi3m)
-
-#
-
-<h4 align="center">
-  <a href="https://docs.scaffoldeth.io">Scaffold-ETH 2 Documentation</a> |
-  <a href="https://scaffoldeth.io">Scaffold-ETH 2 Website</a>
-</h4>
-
-🧪 An open-source toolkit for building decentralized applications (dApps) on the Rootstock sidechain, extending the powerful features of Scaffold-ETH 2. This extension is tailored for developers looking to leverage Bitcoin's security with Rootstock's smart contract capabilities.
-
-⚙️ Built using NextJS, RainbowKit, Hardhat, Wagmi, Viem, and TypeScript, with added support for the Rootstock network.
-
-- ✅ **Contract Hot Reload**: Your frontend auto-adapts to your smart contract as you edit it.
-- 🪝 **[Custom hooks](https://docs.scaffoldeth.io/hooks/)**: A collection of React hooks wrapped around [wagmi](https://wagmi.sh/) to simplify interactions with smart contracts, with TypeScript autocompletion.
-- 🧱 [**Components**](https://docs.scaffoldeth.io/components/): A collection of common web3 components to quickly build your frontend.
-- 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
-- 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Rootstock and Ethereum networks.
-
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/b237af0c-5027-4849-a5c1-2e31495cccb1)
-
-## Requirements
-
+## Quickstart    
 Before you begin, you need to install the following tools:
 
 - [Node (>= v18.17)](https://nodejs.org/en/download/)
 - Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
 - [Git](https://git-scm.com/downloads)
 
-## Quickstart
-
 To get started with Scaffold-ETH 2: Rootstock Extension, follow the steps below:
 
 1. Install dependencies if it was skipped in CLI:
 
     ```bash
-    cd my-dapp-example
+    cd my-rootstock-dapp-example
     yarn install
     ```
 
@@ -86,5 +58,42 @@ Run smart contract tests with `yarn hardhat:test`.
 - Edit your frontend homepage at `packages/nextjs/app/page.tsx`. For guidance on [routing](https://nextjs.org/docs/app/building-your-application/routing/defining-routes) and configuring [pages/layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts), check out the Next.js documentation.
 - Edit your deployment scripts in `packages/hardhat/deploy`.
 
-**Get API keys to deploy to production**
+5. **Get API keys to deploy to production**
 [Rootstock Dashboard](https://dashboard.rpc.rootstock.io/dashboard)
+
+6. **Get testnet tokens**
+[Rootstock Faucet](https://faucet.rootstock.io/)
+
+7. **Deploy your smart contract**
+   ```bash
+   yarn deploy --network rskTestnet
+   ```
+   or
+   ```bash
+   yarn deploy --network rskMainnet
+   ```
+
+## Building on Rootstock
+
+- **Get API keys**: [Rootstock Dashboard](https://dashboard.rpc.rootstock.io/dashboard)
+- **Developer resources**: [Rootstock Developer Portal](https://dev.rootstock.io/)
+- **Learn about Runes**: [What are Runes?](https://www.youtube.com/embed/adkhsgEaXuQ?si=OknSz_y17LzBCi3m)
+
+#
+
+<h4 align="center">
+  <a href="https://docs.scaffoldeth.io">Scaffold-ETH 2 Documentation</a> |
+  <a href="https://scaffoldeth.io">Scaffold-ETH 2 Website</a>
+</h4>
+
+🧪 An open-source toolkit for building decentralized applications (dApps) on the Rootstock sidechain, extending the powerful features of Scaffold-ETH 2. This extension is tailored for developers looking to leverage Bitcoin's security with Rootstock's smart contract capabilities.
+
+⚙️ Built using NextJS, RainbowKit, Hardhat, Wagmi, Viem, and TypeScript, with added support for the Rootstock network.
+
+- ✅ **Contract Hot Reload**: Your frontend auto-adapts to your smart contract as you edit it.
+- 🪝 **[Custom hooks](https://docs.scaffoldeth.io/hooks/)**: A collection of React hooks wrapped around [wagmi](https://wagmi.sh/) to simplify interactions with smart contracts, with TypeScript autocompletion.
+- 🧱 [**Components**](https://docs.scaffoldeth.io/components/): A collection of common web3 components to quickly build your frontend.
+- 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
+- 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Rootstock and Ethereum networks.
+
+![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/b237af0c-5027-4849-a5c1-2e31495cccb1)
