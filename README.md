@@ -9,7 +9,7 @@ This extension of Scaffold-ETH 2 is designed to support development on the Roots
 1. **Create a new project with the Rootstock extension:**
 
    ```bash
-   npx create-eth@latest -e rootstock
+   npx create-eth@latest -e Paul-Sizon/rootstock-extention
     ```
 
 ## Quickstart    
