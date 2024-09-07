@@ -25,7 +25,7 @@ export const lightTheme = `{
 primary: "#f59e0b",
           "primary-content": "#212638",
           secondary: "#65a30d",
-          "secondary-content": "#212638",
+          "secondary-content": "#030712",
           accent: "#93BBFB",
           "accent-content": "#212638",
           neutral: "#212638",
